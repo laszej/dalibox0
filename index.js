@@ -3,7 +3,7 @@ const button = document.getElementById("button")
 
 let parts
 async function login() {
-       const response = await fetch("all/all.txt")
+       const response = await fetch("./all/all.txt")
      
   
       if (!response.ok) {
