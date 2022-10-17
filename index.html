@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Raport beta</title>
+</head>
+
+<body>
+    <div id="header-main">
+
+        <img id="codesvg" src="mikronika-logo.png" width="171" height="64">
+        <div id="sensotransel"><h3>Dalibox Report</h3> </div>
+            
+    </div>
+
+    <div id="main">
+                  
+        <div id="content"><strong><p style="text-align: center;">Report beta</p></strong><br><br>
+
+            <h1 style="color:red"; line-height: 150%;> Testy przeprowadzone kiedy bufor miał 10 000 indeksów. Konkluzja: zdarzenia spływały poprawnie.</h1><br><br>
+           
+                  <p>Feedersy dodane przez Jarka Kłosa generują 497 zdarzeń na minutę. Poniżej dwa screenshoty przedstawiające 4970 indeksów, które pojawiły się w Syntechu(quasi-scadzie) po uruchomieniu wirtualnego koncentratora po 10 minutach (10*497=4970).<br><br>
+                 
+                    <p> Poniżej zdjęcie sprzed uruchomienia liczenia zdarzeń w Syntech (vkonc koncentrator <b>wyłączony</b>)</p><br><br>
+
+                <img src="start1.png" alt="highest index" class="highestIndex"><br><br>
+
+                <p> Poniżej zdjęcie przedstawiające 4970 indeksów, które trafiły do Syntech po odczekaniu 10 minut i uruchomieniu vkonc</p><br><br>
+
+                 <img src="stop.png" alt="highest index" class="highestIndex"><br><br>
+
+                 <p style="font-size: 2rem;color:green";  line-height: 150%;> Testy przeprowadzone kiedy bufor miał 500 000 indeksów. Operowałem na plikach, które dostarczył mi kolega Jarek Kłos gdyż równocześnie logował się na urządzenie</p><br><br>
+
+
+                 <a href="./all">Pliki dostarczone przez Jarka Kłosa i plik, w którym łącze je w jedną całość</a><br>
+
+                 <p > Skrypt łączący wszystkkie pliki i nadający im prawidłowe indeksy.</h1><br><br>
+
+                <p style="color:red"> Uwaga. Pobranie blisko pół miliona indeksów do przeglądarki jako paragrafy może chwilowo unieruchomić przeglądarkę</h1><br><br>
+                    
+                <button id="button"class="button">Pobierze połączone zdarzenia z plików Jarka uporządkowane i z poprawionymi indeksami</button>
+
+                <div id="indeksy"></div>
+
+      
+
+
+
+
+                
+                
+                 
+
+                
+               
+
+                 
+            
+        </div>
+
+    </div>
+
+ 
+
+    <footer> &copy Mikronika 2022</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
